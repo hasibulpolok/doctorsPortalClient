@@ -1,6 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './Pages/Home/Home/Home';
 
 function App() {
   return (
@@ -8,7 +9,10 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-    
+            <Home></Home>
+          </Route>
+          <Route path="/home">
+            <Home></Home>
           </Route>
         </Switch>
       </Router>
